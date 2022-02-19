@@ -5,6 +5,7 @@ import { About } from "./components/About";
 import { Details } from "./components/Details";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
+import { NotFound } from "./components/NotFound";
 import { Products } from "./components/Products";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productId" element={<Details />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </React.Fragment>
   );
